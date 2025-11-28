@@ -1,7 +1,7 @@
 {
-  "name": "name...",
+  "name": "cerberus",
   "version": "0.0.1",
-  "description": "...",
+  "description": "Service responsible for managing user credentials.",
   "author": "Ramos-devram",
   "private": true,
   "license": "UNLICENSED",
