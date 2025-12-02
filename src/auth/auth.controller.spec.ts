@@ -31,7 +31,10 @@ describe('AuthController', () => {
   it('should return a successful response when <<credentials are validated>>', () => {
     service.validateCredentials.mockReturnValue({ success: true })
 
-    const result = controller.validate()
+    const identifier = 'user.example'
+    const password = 'password-example'
+
+    const result = controller.validate(identifier, password)
 
     expect(service.validateCredentials).toHaveBeenCalled()
     expect(result).toEqual({ success: true })

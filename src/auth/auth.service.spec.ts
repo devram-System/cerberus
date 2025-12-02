@@ -11,7 +11,11 @@ describe('AuthService', () => {
   })
 
   it('should return <<success when credentials are validated>>', () => {
-    const result = service.validateCredentials()
+    const identifier = 'user.example'
+    const password = 'password-example'
+
+    const result = service.validateCredentials(identifier, password)
+
     expect(result).toEqual({ success: true })
   })
 })
